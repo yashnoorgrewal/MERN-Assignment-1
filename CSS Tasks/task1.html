@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table and Shapes</title>
+    <style>
+        /* Styling the table */
+        table {
+            width: 50%;
+            border-collapse: separate;
+            border-spacing: 5px;
+            border-radius: 10px;
+            background-color: #a0d0d0;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border: 2px solid #5b9a9a;
+            border-radius: 10px;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Styling the shapes */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 250px;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .shape {
+            width: 60px;
+            height: 60px;
+            border: 2px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rectangle {
+            border-radius: 5px;
+        }
+        .oval {
+            width: 80px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <!-- Shapes -->
+    <div class="container">
+        <div class="shape rectangle"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape oval"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape rectangle"></div>
+    </div>
+
+</body>
+</html>
